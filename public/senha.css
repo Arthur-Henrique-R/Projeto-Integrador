@@ -9,10 +9,7 @@ body {
     color: white;
 }
 
-
-/* =========================
-   CABEÇALHO
-========================= */
+/* CABEÇALHO */
 
 header {
     height: 100px;
@@ -37,31 +34,7 @@ header h1 {
     line-height: 1.1;
 }
 
-
-/* LOGIN DO CABEÇALHO */
-
-#entrar {
-    margin-left: auto;
-    text-align: center;
-}
-
-#entrar img {
-    width: 60px;
-    height: 58px;
-    object-fit: cover;
-    border-radius: 13px;
-}
-
-#entrar p {
-    margin: 0;
-    color: white;
-    font-size: 16px;
-}
-
-
-/* =========================
-   ÁREA PRINCIPAL
-========================= */
+/* ÁREA PRINCIPAL */
 
 main {
     min-height: 563px;
@@ -70,7 +43,7 @@ main {
     align-items: center;
 }
 
-/* BLOCO ESQUECI SENHA */
+/* ESQUECI A SENHA */
 
 #esqueciSenha {
     width: 500px;
@@ -92,13 +65,12 @@ main {
     margin-bottom: 10px;
 }
 
-
 /* INPUT */
 
 input {
     width: 330px;
     height: 38px;
-    background-color: rgb(255, 255, 255);
+    background-color: white;
     border: none;
     border-radius: 5px;
     padding: 8px;
@@ -111,15 +83,14 @@ input:focus {
     outline: 2px solid #0099ff;
 }
 
-
 /* BOTÃO */
 
 button {
     display: block;
     margin: 25px auto 0;
     padding: 8px 18px;
-    background-color: #ffffff;
-    color: rgb(0, 0, 0);
+    background-color: white;
+    color: black;
     border: none;
     border-radius: 5px;
     font-family: Georgia, "Times New Roman", serif;
@@ -135,7 +106,6 @@ button:hover {
     transform: scale(1.05);
 }
 
-
 /* MENSAGEM */
 
 #mensagem {
@@ -145,92 +115,94 @@ button:hover {
     color: #00ff00;
 }
 
-
-/* =========================
-   RODAPÉ
-========================= */
-
 footer {
-    min-height: 190px;
+    height: 285px;
     background-color: black;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
-    padding: 20px 50px;
+    padding: 25px 50px;
+    border-top: 2px solid #333;
+    gap: 30px;
 }
 
 .rodape {
-    min-height: 130px;
-    padding: 10px 30px;
+    height: 170px;
+    padding: 15px 25px;
+    border-left: 1px solid #444;
+}
+
+.rodape:first-child {
+    border-left: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .rodape img {
-    width: 190px;
-}
-
-.rodape p {
-    font-size: 15px;
-    line-height: 1.5;
-    font-weight: bold;
+    width: 220px;
+    height: auto;
 }
 
 .rodape h3 {
-    margin-bottom: 5px;
-    font-size: 17px;
+    color: white;
+    font-size: 18px;
+    margin: 8px 0 12px;
 }
 
+.rodape p {
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 10px 0;
+    line-height: 1.5;
+}
 
-/* =========================
-   CELULAR
-========================= */
+/* TABLET */
 
-@media (max-width: 700px) {
+@media (max-width: 900px) {
 
-    header {
-        height: 80px;
-        padding: 5px 15px;
+    footer {
+        height: auto;
+        min-height: 220px;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
     }
 
-    #logo {
-        width: 170px;
-        height: 70px;
+    .rodape {
+        border-left: none;
+        border-top: 1px solid #444;
+        height: auto;
+        padding: 20px;
     }
 
-    header h1 {
-        display: none;
+    .rodape:first-child {
+        border-top: none;
     }
+}
 
-    #entrar img {
-        width: 50px;
-        height: 48px;
-    }
+/* CELULAR */
 
-    #entrar p {
-        font-size: 13px;
-    }
-
-    main {
-        min-height: 450px;
-    }
-
-    #esqueciSenha {
-        width: 90%;
-
-        max-width: 400px;
-    }
-
-    input {
-        width: 90%;
-    }
+@media (max-width: 600px) {
 
     footer {
         grid-template-columns: 1fr;
         text-align: center;
-        padding: 20px;
+        padding: 25px 20px;
     }
 
     .rodape {
-        min-height: auto;
+        border-left: none;
+        border-top: 1px solid #444;
+        height: auto;
+        padding: 20px;
     }
 
+    .rodape:first-child {
+        border-top: none;
+    }
+
+    .rodape img {
+        width: 200px;
+    }
 }
