@@ -150,79 +150,82 @@ button:hover {
     transform: scale(1.05);
 }
 
+/* FOOTER */
+
 footer {
-    min-height: 190px;
-    background-color: black;
+    min-height: 220px;
+    background: black;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
-    padding: 20px 50px;
+    padding: 25px 50px;
+    border-top: 2px solid #333;
+    gap: 30px;
 }
 
 .rodape {
-    min-height: 130px;
-    padding: 10px 30px;
+    min-height: 150px;
+    padding: 10px 25px;
+    border-left: 1px solid #444;
 }
 
-.rodape img {
+.logo-rodape {
+    border-left: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-rodape img {
     width: 190px;
 }
 
+.rodape h3,
 .rodape p {
-    font-size: 15px;
-    line-height: 1.5;
-    font-weight: bold;
+    color: white;
 }
 
 .rodape h3 {
-    margin-bottom: 5px;
-
     font-size: 17px;
+    margin: 5px 0 10px;
 }
 
-@media (max-width: 700px) {
+.rodape p {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 8px 0;
+}
 
-    header {
-        height: 80px;
-        padding: 5px 15px;
-    }
-
-    #logo {
-        width: 170px;
-        height: 70px;
-    }
-
-    header h1 {
-        display: none;
-    }
-
-    #entrar img {
-        width: 50px;
-        height: 48px;
-    }
-
-
-    #entrar p {
-        font-size: 13px;
-    }
-
-    main {
-        min-height: 450px;
-    }
-
-    #cadastro {
-        width: 90%;
-        max-width: 400px;
-    }
-
-
+@media(max-width:900px) {
     footer {
-        grid-template-columns: 1fr;
-        text-align: center;
-        padding: 20px;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
     }
 
     .rodape {
-        min-height: auto;
+        border-left: none;
+        border-top: 1px solid #444;
+        padding-top: 20px;
+    }
+
+    .logo-rodape {
+        border-top: none;
+    }
+}
+
+@media(max-width:600px) {
+    footer {
+        grid-template-columns: 1fr;
+        text-align: center;
+        padding: 25px 20px;
+    }
+
+    .rodape {
+        text-align: center;
+        border-top: 1px solid #444;
+    }
+
+    .logo-rodape {
+        border-top: none;
     }
 }
