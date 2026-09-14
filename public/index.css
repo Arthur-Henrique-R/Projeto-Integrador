@@ -12,17 +12,17 @@ body {
 /* CABEÇALHO */
 
 header {
-    height: 100px;
-    background-color: black;
+    height: 90px;
+    background-color: #050505;
     display: flex;
     align-items: center;
-    padding: 5px 35px;
-    position: relative;
+    padding: 0 30px;
+    border-bottom: 2px solid #333;
 }
 
 #logo {
-    width: 230px;
-    height: 90px;
+    width: 150px;
+    height: 80px;
     object-fit: contain;
 }
 
@@ -137,9 +137,31 @@ input:focus {
     background-color: #0099ff;
     box-shadow: 0 0 15px #0099ff;
     transform: scale(1.05);
+
+
+#botaoVoltar {
+    display: block;
+    margin: 8px auto 0;
+    padding: 5px 20px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s; 
+    position: relative;
+    left: 180px;
+    bottom: 300px;
 }
 
-/* ESQUECEU A SENHA */
+#botaoVoltar:hover {
+    background-color: #0099ff;
+    box-shadow: 0 0 12px #0099ff;
+    transform: scale(1.05);
+}
 
 #esqueceuSenha {
     display: block;
@@ -156,16 +178,12 @@ input:focus {
     text-shadow: 0 0 8px #0099ff;
 }
 
-/* MENSAGEM */
-
 #mensagem {
     text-align: center;
     margin-top: 10px;
     color: #00ff00;
     font-weight: bold;
 }
-
-/* FOOTER */
 
 footer {
     height: 285px;
@@ -210,8 +228,6 @@ footer {
     line-height: 1.5;
 }
 
-/* TABLET */
-
 @media (max-width: 900px) {
 
     main {
@@ -241,8 +257,6 @@ footer {
         border-top: none;
     }
 }
-
-/* CELULAR */
 
 @media (max-width: 700px) {
 
@@ -308,4 +322,4 @@ footer {
     .rodape img {
         width: 200px;
     }
-}
+}}
