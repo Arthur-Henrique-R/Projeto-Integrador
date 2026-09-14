@@ -34,11 +34,11 @@
                 </div>
                 <div>
                     <label for="ano1">Ano Fabricação</label>
-                    <input type="text" id="ano1">
+                    <input type="number" id="ano1">
                 </div>
                 <div>
                     <label for="ano2">Ano Modelo</label>
-                    <input type="text" id="ano2">
+                    <input type="number" id="ano2">
                 </div>
                 <div>
                     <label for="cor">Cor</label>
@@ -52,11 +52,15 @@
         <div id="principal2">
             <div id="guardar2">
                 <div id="tela2">
-                    <h1>Vendedor e Anúncio</h1>
+                    <h1>Anúncio</h1>
                     <br>
-                    <label for=""></label>
+                    <label for="km">Quilometragem</label>
+                    <input type="number" id="km">
+                    <label for="descricao">Descrição: Não obrigatorio</label>
+                    <textarea id="descricao" maxlength="500"></textarea>
+                    <p id="contador">0/500</p>
                     <label for="preco">Preço</label>
-                    <input type="number" id="preco">
+                    <input type="text" id="preco">
                 </div>
                 <div class="navega">
                     <button id="voltar2" class="butao">Voltar</button>
@@ -64,6 +68,50 @@
                 </div>
             </div>
         </div>
+
+        <div id="principal3">
+            <div id="guardar3">
+                <div id="tela3">
+
+                    <h1>Vendedor</h1>
+
+                    <label>Tipo de vendedor</label>
+
+                    <div id="tipo-vendedor">
+                        <label class="opcao">
+                            <input type="radio" name="tipo" id="pessoa">
+                            <span>Pessoa</span>
+                        </label>
+
+                        <label class="opcao">
+                            <input type="radio" name="tipo" id="loja">
+                            <span>Loja</span>
+                        </label>
+                    </div>
+
+                    <div id="documento">
+                        <label for="doc" id="labelDoc">CPF</label>
+                        <input type="number" id="doc">
+                    </div>
+
+                    <label for="nome">Nome completo</label>
+                    <input type="text" id="nome">
+
+                    <label for="telefone">Telefone</label>
+                    <input type="text" id="telefone" maxlength="15">
+
+                    <label for="cep">CEP</label>
+                    <input type="text" name="cep" id="cep" maxlength="9">
+
+                </div>
+
+                <div class="navega2">
+                    <button id="voltar3" class="butao">Voltar</button>
+                    <button id="finalizar" class="butao">Finalizar</button>
+                </div>
+            </div>
+        </div>
+
 
     </main>
 
